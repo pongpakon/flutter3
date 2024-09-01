@@ -21,7 +21,7 @@ class _ConvertState extends State<Convert> {
 
     var response = await http.get(uri, headers: {
       "X-RapidAPI-Host": "currency-converter-pro1.p.rapidapi.com",
-      "x-rapidapi-key": "C05GBKbyg0mshuD0FmkuTgEJe7mQp1QktrHjsndVBQ98Lef6WS"
+      "x-rapidapi-key": "2d0d4ed9a1msh620f079db77af3ep15b3bcjsn4310ad7c47eb"
     });
     Currency result = currencyFromJson(response.body);
     print(result.toString());
