@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:simple_app/home.dart.bak1';
+import 'package:simple_app/screens/latestRate.dart';
+import 'package:simple_app/screens/convert.dart';
 
-void main(){
+void main() {
   runApp(MaterialApp(
-    title: 'Simple App',
-    home: const Home(),
+    title: "Exchange Currency",
+    home: Scaffold(
+      appBar: AppBar(
+        title: const Text("Exchange Currency"),
+      ),
+      body: const LatestRate(),
+    ),
   ));
 }
